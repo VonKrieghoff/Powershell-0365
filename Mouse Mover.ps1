@@ -19,7 +19,7 @@ Write-Output "
    ,----(     ..    )
   /      \__     __/
  /|         (\  |(           Mouse Running 
-^ \   /___\  /\_|        VonKrieghoff is Hiding 
+^ \   /___\  /\_|        VonKrieghoff, Niex700 and HakedDrakula are Hiding 
    |__|   |__|
 
 "
