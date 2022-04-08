@@ -13,16 +13,16 @@
 
 
 cls
-Write-Output "
-          __     __
-         /  \~~~/  \
-   ,----(     ..    )
-  /      \__     __/
- /|         (\  |(       Mouse is Running 
-^ \   /___\  /\_|        VonKrieghoff, Niex700 and HakedDrakula are Hiding 
-   |__|   |__|
+    Write-Output "
+              __     __
+             /  \~~~/  \
+       ,----(     ..    )
+      /      \__     __/
+     /|         (\  |(       Mouse is Running 
+    ^ \   /___\  /\_|        VonKrieghoff, Niex700 and HakedDrakula are Hiding 
+       |__|   |__|
 
-"
+    "
 
 
 
@@ -38,7 +38,8 @@ while ($true)
   $x = $Positon.X + 1
   $y = $Positon.Y + 1
   [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
-  Write-Output "Mouse is now at positon X: $X | Y: $Y"
+  $date = Get-Date
+  Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
 
-  Start-Sleep -Seconds 10
+  Start-Sleep -Seconds 5
 }
