@@ -40,7 +40,11 @@ while ($true)
   [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
   #Write where is mouse
   $date = Get-Date
-  Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
+  
+  
+  Write-Progress -CurrentOperation asdas ("   $date - Mouse is now in positon X: $X | Y: $Y")
+  #Write-Host -NoNewline "   $date - Mouse is now in positon X: $X | Y: $Y"
+  #Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
   
 
   $WShell = New-Object -com "Wscript.Shell"
@@ -49,11 +53,6 @@ while ($true)
   $WShell.sendkeys("{SCROLLLOCK}")
   #Start-Sleep -Seconds 240
 
-
-
   
-  
-
-
   Start-Sleep -Seconds 5
 }
