@@ -14,6 +14,16 @@
 
 cls
     Write-Output "
+
+
+
+
+
+
+
+
+
+
               __     __
              /  \~~~/  \
        ,----(     ..    )
@@ -42,7 +52,7 @@ while ($true)
   $date = Get-Date
   
   
-  Write-Progress -CurrentOperation asdas ("   $date - Mouse is now in positon X: $X | Y: $Y")
+  Write-Progress -CurrentOperation "Waiting for new mouse position" ("   $date - Mouse is now in positon X: $X | Y: $Y")
   #Write-Host -NoNewline "   $date - Mouse is now in positon X: $X | Y: $Y"
   #Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
   
