@@ -38,6 +38,15 @@ while ($true)
   $x = $Positon.X + 1
   $y = $Positon.Y + 1
   [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
+  
+  $WShell = New-Object -com "Wscript.Shell"
+  for ($i = 0; $i -lt $minutes; $i++) {
+  #Start-Sleep -Seconds 60
+  $myshell.sendkeys(".")
+}
+
+  
+  
   $date = Get-Date
   Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
 
