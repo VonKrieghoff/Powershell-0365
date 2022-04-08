@@ -50,19 +50,17 @@ while ($true)
   [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
   #Write where is mouse
   $date = Get-Date
-  
-  
   Write-Progress -CurrentOperation "Waiting for new mouse position" ("   $date - Mouse is now in positon X: $X | Y: $Y")
-  #Write-Host -NoNewline "   $date - Mouse is now in positon X: $X | Y: $Y"
   #Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
   
-
+  # Pressign ScrollLock on Keyboard
   $WShell = New-Object -com "Wscript.Shell"
   $WShell.sendkeys("{SCROLLLOCK}")
+  $WShell.sendkeys("{CAPSLOCK}")  
+
   Start-Sleep -Milliseconds 100
   $WShell.sendkeys("{SCROLLLOCK}")
-  #Start-Sleep -Seconds 240
-
-  
+  $WShell.sendkeys("{CAPSLOCK}")    
+  # Waiting 5s and doing everything all over.  
   Start-Sleep -Seconds 5
 }
