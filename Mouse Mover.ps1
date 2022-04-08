@@ -31,24 +31,29 @@ Add-Type -AssemblyName System.Windows.Forms
 
 while ($true)
 {
+  #Get position
   $Positon = [System.Windows.Forms.Cursor]::Position
-  #$x = ($pos.X % 500) + 1
-  #$y = ($pos.Y % 500) + 1
-
+  #Edit Position
   $x = $Positon.X + 1
   $y = $Positon.Y + 1
+  #Send Mouse to new position
   [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
+  #Write where is mouse
+  $date = Get-Date
+  Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
   
+
   $WShell = New-Object -com "Wscript.Shell"
-  for ($i = 0; $i -lt $minutes; $i++) {
-  #Start-Sleep -Seconds 60
-  $myshell.sendkeys(".")
-}
+  $WShell.sendkeys("{SCROLLLOCK}")
+  Start-Sleep -Milliseconds 100
+  $WShell.sendkeys("{SCROLLLOCK}")
+  #Start-Sleep -Seconds 240
+
+
 
   
   
-  $date = Get-Date
-  Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
+
 
   Start-Sleep -Seconds 5
 }
