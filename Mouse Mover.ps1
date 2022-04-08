@@ -18,7 +18,7 @@ Write-Output "
          /  \~~~/  \
    ,----(     ..    )
   /      \__     __/
- /|         (\  |(       Mouse Running 
+ /|         (\  |(       Mouse is Running 
 ^ \   /___\  /\_|        VonKrieghoff, Niex700 and HakedDrakula are Hiding 
    |__|   |__|
 
