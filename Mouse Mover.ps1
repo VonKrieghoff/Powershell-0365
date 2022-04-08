@@ -29,7 +29,7 @@ cls
        ,----(     ..    )
       /      \__     __/
      /|         (\  |(       Mouse is Running 
-    ^ \   /___\  /\_|        VonKrieghoff, Niex700 and HakedDrakula are Hiding 
+    ^ \   /___\  /\_|        I am Hiding 
        |__|   |__|
 
     "
@@ -53,14 +53,16 @@ while ($true)
   Write-Progress -CurrentOperation "Waiting for new mouse position" ("   $date - Mouse is now in positon X: $X | Y: $Y")
   #Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
   
-  # Pressign ScrollLock on Keyboard
+  # Pressign ScrollLock on Keyboard:
   $WShell = New-Object -com "Wscript.Shell"
   $WShell.sendkeys("{SCROLLLOCK}")
   $WShell.sendkeys("{CAPSLOCK}")  
-
+  # Waiting 100ms and pressing again:
   Start-Sleep -Milliseconds 100
   $WShell.sendkeys("{SCROLLLOCK}")
   $WShell.sendkeys("{CAPSLOCK}")    
+  
+  
   # Waiting 5s and doing everything all over.  
   Start-Sleep -Seconds 5
 }
