@@ -52,7 +52,7 @@ while ($true)
   [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
   #Write where is mouse
   $date = Get-Date
-  Write-Progress -CurrentOperation "Waiting for new mouse position" ("   $date - Mouse is now in positon X: $X | Y: $Y")
+  Write-Progress -CurrentOperation "Waiting for new mouse position" ("   $date - Mouse is now in position X: $X | Y: $Y")
   #Write-Output "   $date - Mouse is now in positon X: $X | Y: $Y"
   
   # Pressign ScrollLock on Keyboard:
