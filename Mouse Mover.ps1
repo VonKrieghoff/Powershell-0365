@@ -24,8 +24,6 @@ cls
 
 
 
-
-
               __     __
              /  \~~~/  \
        ,----(     ..    )
@@ -58,11 +56,11 @@ while ($true)
   # Pressign ScrollLock on Keyboard:
   $WShell = New-Object -com "Wscript.Shell"
   $WShell.sendkeys("{SCROLLLOCK}")
-  $WShell.sendkeys("{CAPSLOCK}")  
+  #$WShell.sendkeys("{CAPSLOCK}")  #Will blink more lights on Keyboard, but is litTle bit annoying :)   
   # Waiting 100ms and pressing again:
   Start-Sleep -Milliseconds 100
   $WShell.sendkeys("{SCROLLLOCK}")
-  $WShell.sendkeys("{CAPSLOCK}")    
+  #$WShell.sendkeys("{CAPSLOCK}")  #Will blink more lights on Keyboard, but is litTle bit annoying :)    
   
   
   # Waiting 5s and doing everything all over.  
