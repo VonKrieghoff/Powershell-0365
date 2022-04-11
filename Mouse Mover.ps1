@@ -2,7 +2,7 @@
 # Remotely Invoke:
 # $ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/VonKrieghoff/Powershell-0365/main/Mouse%20Mover.ps1
 # Invoke-Expression $($ScriptFromGithHub.Content)
-
+# $ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/VonKrieghoff/Powershell-0365/main/Mouse%20Mover.ps1; Invoke-Expression $($ScriptFromGithHub.Content)
 
 # BEfore u will be able to execute, u need to chenge esecyuution policy to unrestrericted:
 # Set-ExecutionPolicy unrestricted -Scope currentuser
