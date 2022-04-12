@@ -9,6 +9,8 @@
 # Set back:
 # Set-ExecutionPolicy restricted -Scope currentuser
 
+# Known issues:
+# - On Linux Nano editor it opens when triggers SCROLLLOCK key
 
 
 
