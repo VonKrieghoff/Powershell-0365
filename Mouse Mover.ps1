@@ -66,5 +66,5 @@ while ($true)
   
   
   # Waiting 5s and doing everything all over.  
-  Start-Sleep -Seconds 5
+  Start-Sleep -Seconds 15
 }
