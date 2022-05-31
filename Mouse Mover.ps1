@@ -4,11 +4,6 @@
 # Invoke-Expression $($ScriptFromGithHub.Content)
 # $ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/VonKrieghoff/Powershell-0365/main/Mouse%20Mover.ps1; Invoke-Expression $($ScriptFromGithHub.Content)
 
-# BEfore u will be able to execute, u need to chenge esecyuution policy to unrestrericted:
-# Set-ExecutionPolicy unrestricted -Scope currentuser
-# Set back:
-# Set-ExecutionPolicy restricted -Scope currentuser
-
 # Known issues:
 # - On Linux Nano editor it opens when triggers SCROLLLOCK key
 
@@ -32,7 +27,7 @@ cls
       /      \__     __/
      /|         (\  |(       Mouse is Running 
     ^ \   /___\  /\_|        I am Hiding 
-       |__|   |__|
+       |__|   |__|           https://github.com/VonKrieghoff/
 
     "
 
