@@ -61,8 +61,8 @@ if($HTTPBrowser -ne $SetAsDefaultBrowser)
  Write-Progress -CurrentOperation "Changing default browser to $SetAsDefaultBrowser"
  #Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\Shell\Associations\UrlAssociations\http\UserChoice' -Name ProgId -Value $SetAsDefaultBrowser
 }
- else {
-Write-Output "DEfault HTTP browser already is $HTTPBrowser" }
+# else {
+#Write-Output "DEfault HTTP browser already is $HTTPBrowser" }
 
 
 if($HTTPSBrowser -ne $SetAsDefaultBrowser)
@@ -71,8 +71,8 @@ if($HTTPSBrowser -ne $SetAsDefaultBrowser)
  Write-Output $HTTPBrowser
  #Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\Shell\Associations\UrlAssociations\https\UserChoice' -Name ProgId -Value $SetAsDefaultBrowser
 }
-else {
-Write-Output "DEfault HTTPS browser already is $HTTPSBrowser" }
+#else {
+#Write-Output "DEfault HTTPS browser already is $HTTPSBrowser" }
 
 
  
