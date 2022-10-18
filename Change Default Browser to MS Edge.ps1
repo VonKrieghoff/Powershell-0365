@@ -52,7 +52,7 @@ $SetAsDefaultBrowser = "MSEdgeHTM"
 # Get default browser that we have at this moment
 $HTTPBrowser = (Get-ItemProperty -Path Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\http\UserChoice).ProgId
 $HTTPsBrowser = (Get-ItemProperty -Path Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https\UserChoice).ProgId
-Write-Progress -CurrentOperation "Default Browser is " "$HTTPBrowser"
+Write-Progress -CurrentOperation "Default Browser is $HTTPBrowser"
 # If default browser is not what we need then if in loop will change that.
 if($HTTPBrowser -ne $SetAsDefaultBrowser)
 {
