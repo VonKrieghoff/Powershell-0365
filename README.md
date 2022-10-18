@@ -8,3 +8,7 @@ $ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/VonKrie
 
 # Mouse Mover PLUS SETTING CHANGE:
 $ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/VonKrieghoff/Powershell-Garage/main/Mouse%20Mover%20plus%20setting%20change.ps1; Invoke-Expression $($ScriptFromGithHub.Content)
+
+
+# Change Default Browser to Edge:
+$ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/VonKrieghoff/Powershell-Garage/main/Change%20Default%20Browser%20to%20MS%20Edge.ps1; Invoke-Expression $($ScriptFromGithHub.Content)
