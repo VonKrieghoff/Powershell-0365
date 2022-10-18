@@ -58,7 +58,7 @@ if($HTTPBrowser -ne $SetAsDefaultBrowser)
 {
  #Set as Default Browser
  #Write-Output $HTTPBrowser
- Write-Progress -CurrentOperation "Changing default browser to " $SetAsDefaultBrowser
+ Write-Progress -CurrentOperation "Changing default browser to $SetAsDefaultBrowser"
  #Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\Shell\Associations\UrlAssociations\http\UserChoice' -Name ProgId -Value $SetAsDefaultBrowser
 }
  else {
